@@ -1,0 +1,27 @@
+#cartshop{
+    color:white;
+    background-color: blue;
+    margin-left: 675px;
+    
+}
+ img{
+    width:100px;
+    height:150px;
+  
+}
+mat-toolbar-row h1{
+    padding: 10px;
+}
+mat-toolbar-row h1:hover{
+    color: white;
+}
+button{
+    background-color: ghostwhite;
+    color: blue;
+    border-radius: 30px;
+    border:1px solid white;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}

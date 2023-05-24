@@ -1,0 +1,32 @@
+<app-header> </app-header>
+
+
+<div class="filters">
+<mat-form-field>
+<mat-label>sort</mat-label>
+<mat-select panelClass="sort-select" >
+<mat-option value="name">name</mat-option>
+<mat-option value="released">Released</mat-option>
+<mat-option value="added">added</mat-option>
+<mat-option value="created">created</mat-option>
+<mat-option value="updated">Updated</mat-option>
+<mat-option value="rating">Rating</mat-option>
+</mat-select>
+</mat-form-field>
+
+
+
+</div>
+<input type="search" placeholder="search +1M Games" name="search"  [(ngModel)]="search " (ngModelChange)="searchnow()"> 
+
+<div  *ngFor=" let res of result" class="images" >
+ <div class="image">
+  <img  src="{{res.image_background}}"></div>
+  <h1>Plateform </h1>
+  <button mat-button color="warn" (click)="addproduct(res)">Add to cart</button>
+
+{{res.slug}}
+
+
+</div>
+

@@ -1,0 +1,20 @@
+<app-header> </app-header>
+
+<h1>Liste des produits</h1>
+<table>
+<tr>
+<th>Nom de jeu </th>
+<th>Slug de jeu</th>
+<th>Plateforme de jeu</th>
+
+</tr>
+
+<tr *ngFor="let element of gamescart">
+<td>{{element.slug}}</td>
+<td>{{element.name}}</td>
+<td><img src="{{element.image_background}}"></td>
+
+</tr>
+
+</table>
+Totalelements:{{gamescart.length}}<button mat-raised-button color="primary">Checkout</button> 

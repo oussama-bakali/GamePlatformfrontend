@@ -1,0 +1,24 @@
+<mat-toolbar style="background-color:blue">
+<mat-toolbar-row>
+<img src="https://svgsilh.com/svg/1837422.svg">
+<h1>All games</h1>
+<h1>Lastest games</h1>
+<h1>MyProfile</h1>
+<mat-dialog-actions>
+    <button mat-raised-button color="primary" (click)="openconnection()">Connect</button>
+</mat-dialog-actions>
+
+<mat-icon  (click)="openpanier()"id="cartshop">shopping_cart</mat-icon>
+<form >
+
+    <input type="search" placeholder="search +1M Games" name="search" [(ngModel)]="search " (ngModelChange)="searchnow()"> 
+   
+</form>
+
+<mat-icon id="search">search</mat-icon>
+
+</mat-toolbar-row>
+
+
+
+</mat-toolbar>
